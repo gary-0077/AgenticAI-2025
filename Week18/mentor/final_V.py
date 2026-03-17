@@ -58,7 +58,7 @@ def policy_retriever(query: str) -> str:
     docs = retriever.invoke(query)
 
     results = []
-
+    
     for doc in docs:
         source = doc.metadata.get("source", "Unknown")
         page = doc.metadata.get("page", "N/A")
